@@ -1,0 +1,2 @@
+git log --branches=master --reverse --date=iso | head -n 3 | grep Date | sed -e 's/Date:   //'
+

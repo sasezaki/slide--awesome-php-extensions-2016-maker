@@ -1,0 +1,42 @@
+<?php
+$list = [
+    'Benchmarking',
+    'Caching',
+    'Configuration',
+    'Console',
+    'Database',
+    'Date and Time',
+    'Encryption',
+    'Event',
+    'File Formats',
+    'File System',
+    'GUI',
+    'HTML',
+    'HTTP',
+    'Images',
+    'Internationalization',
+    'Languages',
+    'Logging',
+    'Mail',
+    'Math',
+    'Multimedia',
+    'Networking',
+    'Numbers',
+    'Payment',
+    'PHP',
+    'Processing',
+    'Search Engine',
+    'Security',
+    'Streams',
+    'Structures',
+    'System',
+    'Text',
+    'Tools and Utilities',
+    'Virtualization',
+    'Web Services',
+    'XML',
+];
+
+foreach ($list as $c) {
+    echo 'const C_', strtoupper(preg_replace('/\s/',"",$c)), ' = ', "'{$c}';", PHP_EOL;
+}
